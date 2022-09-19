@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header {
 width: 100%;
-height: 56px;
+height: 70px;
 background: #C8DEF6;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -46,37 +46,29 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     font-weight: 500;
     font-size: 18px;
     padding-left: 30px;
+    padding-top: 5px;
+    font-size: 20px;
 }
 .nav a:after {
-display: block; /*превращаем его в блочный элемент*/
-content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-height: 1.5px; /*задаём высоту линии*/
-width: 0%; /*задаём начальную ширину элемента (линии)*/
-background-color: #111; /*цвет фона элемента*/
-transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+display: block; 
+content: "";
+height: 1.5px; 
+width: 0%; 
+background-color: #111; 
+transition: width 0.4s ease-in-out; 
 }
 .nav a:hover:after,
 .nav a:focus:after {
 width: 100%;
-}
-.logo a{
-    font-size: 30px;
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
-}
-.logo{
-    margin: -12px 0px 0px 0px;
 }
 .container {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
-.top-slide{
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+.logo img {
+    margin-top: -15px;
+    max-width: 70px;
 }
 .slideshow{
     position: relative;
